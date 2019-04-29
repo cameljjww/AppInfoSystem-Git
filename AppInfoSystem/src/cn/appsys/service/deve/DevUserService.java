@@ -1,13 +1,14 @@
 package cn.appsys.service.deve;
 
-import cn.appsys.pojo.DevUser;
+import java.util.Map;
+
 
 public interface DevUserService {
 	/**
-	 * 用户登录
+	 * 开发者用户登录
 	 * @param devCode
 	 * @param devPassword
 	 * @return
 	 */
-	public DevUser devLogin(String devCode,String devPassword) throws Exception;
+	public Map<String, Object> devLogin(String devCode,String devPassword) throws Exception;
 }

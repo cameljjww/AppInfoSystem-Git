@@ -1,8 +1,15 @@
 package cn.appsys.dao.backenduser;
 
+
 import org.apache.ibatis.annotations.Param;
 
-import cn.appsys.pojo.DevUser;
+import cn.appsys.pojo.BackendUser;
+/**
+ * 
+ * @author 12965
+ 
+ *
+ */
 
 public interface BackendUserMapper {
 	/**
@@ -11,5 +18,5 @@ public interface BackendUserMapper {
 	 * @return
 	 * @throws Exception
 	 */
-	public DevUser getBackedLogin(@Param("devCode")String devCode)throws Exception;
+	public BackendUser getBackedLogin(@Param("userCode")String userCode)throws Exception;
 }

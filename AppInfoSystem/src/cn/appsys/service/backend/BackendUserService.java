@@ -1,8 +1,18 @@
 package cn.appsys.service.backend;
 
-import org.springframework.stereotype.Service;
+import java.util.Map;
 
-@Service
+
+
+
+
 public interface BackendUserService {
-
+	/**
+	 * 
+	 * @param userCode
+	 * @param userPassword
+	 * @return
+	 * @throws Exception
+	 */
+	public Map<String,Object>backedLogin( String userCode,String userPassword )throws Exception;
 }
